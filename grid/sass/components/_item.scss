@@ -1,0 +1,170 @@
+.item {
+    float: left;
+    width: 20.6rem;
+    height: 20.6rem;
+    color: $color-white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @supports(display: grid) {
+      display: grid;
+      margin: 0;
+      justify-items: center;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 50%;
+      font-size: 1.3rem;
+    }
+
+    & > p {
+      padding: 0 3.9rem;
+      @supports(display: grid) {
+        align-items: center;
+        justify-items: center;
+      }
+    }
+  
+   
+  
+    &--img {
+      margin-left: 25%;
+      margin-top: 3rem;
+      width: 10rem;
+      height: 10rem;
+      padding-bottom: 3rem;
+
+      @supports(display: grid) {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        justify-items: center;
+        align-items: center;
+      }
+    }
+  
+    &--1 {
+      background-color: $color-light-blue;
+    }
+  
+    &--2 {
+      background-color: $color-green;
+    }
+  
+    &--3 {
+      background-color: $color-violet;
+    }
+  
+    &--4 {
+      background-color: $color-yellow;
+    }
+  
+    &--5 {
+      display: grid;
+      background: linear-gradient(to bottom, $color-pink-primary 50%, $color-pink-dark 50%);
+    }
+  
+    &--6 {
+      background-color: $color-purple;
+    }
+  }
+  
+  .daily-content {
+    
+    width: 20.5rem;
+    height: 10rem;
+    font-size: 1.2rem;
+
+
+    @supports(display: grid) {
+      display: grid;
+      margin: 0;
+      padding: 0;
+      justify-items: start;
+      align-items: center;
+      grid-template-rows: 10rem;
+      grid-template-columns: 5rem 5rem 5rem 5rem;
+    }
+  
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 4.3rem 4.3rem 4.3rem 4.3rem;
+      font-size: 1rem;
+      align-items: center;
+    }
+  
+    &--item {
+      float: left;
+
+      @supports(display: grid) {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        justify-items: end;
+      }
+
+      & > span {
+        margin-left: 2rem;
+        @supports(display: grid) {
+          margin: 0;
+        }
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.5rem;
+          justify-content: start;
+        }
+      }
+  
+      &__img {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+        margin-left: 1.7rem;
+
+        @supports(display: grid) {
+          display: grid;
+          margin: 0;
+          padding: 0;
+          padding-bottom: .5rem;
+          justify-items: center;
+          align-items: center;
+        }
+  
+        @media only screen and (max-width: $bp-small) {
+          width: 2.5rem;
+          height: 2.5rem;
+          padding-bottom: .3rem;
+        }
+      }
+    }
+  
+    &--item h2 {
+      padding-left: 2rem;
+      padding-bottom: .3rem;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .daily-item--img {
+    width: 20.5rem;
+    height: 10.7rem;
+    margin-left: 37%;
+    margin-top: 2rem;
+
+    @supports(display: grid) {
+      display: grid;
+      margin: 0;
+      padding: 0;
+      justify-items: center;
+      align-items: center;
+      
+    }
+  
+    &__big {
+      height: 6.5rem;
+  
+      @media only screen and (max-width: $bp-small) {
+        height: 5.4rem;
+      }
+    }
+  }

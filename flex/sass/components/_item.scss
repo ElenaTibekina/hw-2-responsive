@@ -1,0 +1,98 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20.6rem;
+    height: 20.6rem;
+    color: $color-white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+    @media only screen and (max-width: $bp-smallest) {
+      width: 30%;
+      height: 22vh;
+    }
+  
+    &--img {
+      width: 10rem;
+      height: 10rem;
+      padding-bottom: 3rem;
+    }
+  
+    &--1 {
+      background-color: $color-light-blue;
+    }
+  
+    &--2 {
+      background-color: $color-green;
+    }
+  
+    &--3 {
+      background-color: $color-violet;
+    }
+  
+    &--4 {
+      background-color: $color-yellow;
+    }
+  
+    &--5 {
+      display: flex;
+      background: linear-gradient(to bottom, $color-pink-primary 50%, $color-pink-dark 50%);
+    }
+  
+    &--6 {
+      background-color: $color-purple;
+    }
+  }
+  
+  .daily-content {
+    display: flex;
+    width: 20.5rem;
+    height: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+  
+    @media only screen and (max-width: $bp-small) {
+      width: 18rem;
+      height: 8rem;
+    }
+  
+    &--item {
+      display: flex;
+      flex-direction: column;
+  
+      &__img {
+        width: 2.5rem;
+        height: 2.5rem;
+  
+        @media only screen and (max-width: $bp-small) {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  
+    &--item h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .daily-item--img {
+    width: 20.5rem;
+    height: 10.7rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  
+    &__big {
+      height: 6.5rem;
+  
+      @media only screen and (max-width: $bp-small) {
+        height: 5.4rem;
+      }
+    }
+  }
