@@ -1,37 +1,22 @@
-.wrapper {
-    background: url(../img/layout.jpg) center no-repeat fixed;
-    background-size: cover;
-    margin: auto;
-    margin-top: 18vh;
-    min-height: 100vh;
+h2 {
+  font-weight: normal;
+}
 
-    @supports(display: grid) {
-      display: grid;
-      margin: 0;
-      justify-items: center;
-      align-content: center;
-    }
+.container {
+  max-width: 62rem;
+  min-height: auto;
+  margin: auto;
+  box-shadow: 0 0 2rem $color-black;
+
+  @supports (display: grid) {
+    margin: 3rem;
+    width: 90%;
   }
-  
-  h2 {
-    font-weight: normal;
-  }
-  
+}
+
+@media only screen and (max-width: $bp-small) {
   .container {
-    max-width: 62rem;
-    min-height: auto;
-    margin: auto;
-    box-shadow: 0 0 2rem $color-black;
-
-    @supports(display: grid) {
-      margin: 3rem;
-      width: 90%;
-    }
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
-  
-  @media only screen and (max-width: $bp-small) {
-    .container  {
-      margin-right: 2rem;
-      margin-left: 2rem;
-    }
-  }
+}

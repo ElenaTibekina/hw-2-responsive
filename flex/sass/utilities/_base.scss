@@ -9,13 +9,27 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  /* 10px/16px = 62.5% => 1rem = 10px */
-  @media only screen and (max-width: $bp-large) {
+}
+
+@media only screen and (max-width: 68.75em) {
+  html {
     font-size: 50%;
   }
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    
+  font-family: "Open Sans", sans-serif;
+  background: url(../img/layout.jpg) center no-repeat fixed;
+  background-size: cover;
+  margin: auto;
+  min-height: 100vh;
+  padding-top: 20vh;
+}
+
+@media only screen and (max-width: 18.13em) {
+  body {
+    padding-top: 0;
+    margin: 0;
+    min-height: auto;
+  }
 }

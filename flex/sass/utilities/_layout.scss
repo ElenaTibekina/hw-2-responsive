@@ -1,41 +1,25 @@
-.wrapper {
-    background: url(../img/layout.jpg) center no-repeat fixed;
-    background-size: cover;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
+h2 {
+  font-weight: normal;
+}
+
+.container {
+  display: flex;
+  max-width: 62rem;
+  min-height: auto;
+  flex-wrap: wrap;
+  margin: auto;
+  box-shadow: 0 0 2rem $color-black;
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .container > * {
+    flex: 2 50%;
   }
-  
-  _:-ms-fullscreen, :root .wrapper {
-    display: block;
-    margin-top: 10vh;
-  }
-  
-  
-  h2 {
-    font-weight: normal;
-  }
-  
+}
+
+@media only screen and (max-width: $bp-small) {
   .container {
-    display: flex;
-    max-width: 62rem;
-    min-height: auto;
-    flex-wrap: wrap;
-    margin: auto;
-    box-shadow: 0 0 2rem $color-black;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
-  
-  @media only screen and (max-width: $bp-medium) {
-    .container > * {
-      flex: 2 50%;
-    }
-  }
-  
-  @media only screen and (max-width: $bp-small) {
-    .container  {
-      margin-right: 2rem;
-      margin-left: 2rem;
-    }
-  }
+}
